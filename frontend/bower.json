@@ -1,0 +1,25 @@
+{
+  "name": "adoptionApp",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "Darien Lombardi <darien.lombardi@gmail.com>"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.4.0",
+    "angular-ui-router": "~0.2.15",
+    "angular": "~1.4.6",
+    "bootstrap": "~3.3.5"
+  }
+}

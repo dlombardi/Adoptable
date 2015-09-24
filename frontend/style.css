@@ -1,0 +1,69 @@
+
+
+body{
+  background-image: url(images/quatrefoil-pattern-background-pink-1375734522XyP.jpg);
+}
+
+
+#home{
+  margin-top: -5%;
+  background-image: url(http://i.huffpost.com/gen/1896248/images/o-DOG-facebook.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 750px;
+}
+
+#postPetForm{
+  margin: 0 auto;
+  width: 50%;
+}
+
+#formGroup{
+  margin-left: -15%;
+}
+
+.radio{
+  display: inline-block;
+}
+
+#landingHeader{
+  margin-top: 200px;
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+}
+
+#postPetHeader{
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  border-bottom: 1px solid white;
+}
+
+#clientHeader{
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  border-bottom: 1px solid white;
+}
+
+#clientList{
+  background-color: whitesmoke;
+  border: 2px solid white;
+  z-index: 100;
+}
+
+#clientList a {
+  color: rgb(157, 177, 235);
+}
+
+#currentClientName {
+  text-align: center;
+}
+
+.pet{
+  background-color: whitesmoke;
+  padding: 10px 10px 10px 10px;
+  margin-left: 10px;
+  height: 300px;
+  z-index: 1;
+  text-align: center;
+}

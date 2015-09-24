@@ -1,0 +1,32 @@
+<div id="clientList" class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+  <ul class="nav">
+    <h3 class="active">Clients</h3>
+    <li><a ng-model="client" ui-sref="show({ClientId: client._id})" data-toggle="modal" data-target="#myModal" ng-repeat="client in clients">{{client.name}}</a></li>
+  </ul>
+</div>
+<!-- <div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <h2 id="currentClientName">{{currentClient.name}}</h3>
+      <ul>
+        <li>Email: {{currentClient.email}}</li>
+        <li>Pets: {{currentClient.pets}}</li>
+      </ul>
+
+    </div>
+  </div>
+</div> -->
+<div id="petDisplay" class="col-lg-10 col-offset-2">
+  <div class="container">
+    <div class="row">
+      <div class="col col-lg-2 pet" ng-repeat="pet in pets">{{pet.name}}
+        <img src="" alt="">
+        <h3>{{pet.kind}}</h3>
+        <h3>{{pet.variety}}</h3>
+        <h3>{{pet.gender}}</h3>
+        <h3>{{pet.age}}</h3>
+        <h3>{{pet.description}}</h3>
+      </div>
+    </div>
+  </div>
+</div>

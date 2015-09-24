@@ -1,0 +1,65 @@
+<div id="postPet" class="jumbotron text-center">
+<h1 id="postPetHeader">Provide information for your pet</h2>
+  <div id="postPetForm">
+    <form class="form-horizontal">
+      <fieldset>
+        <legend>New Pet</legend>
+        <div id="formGroup">
+          <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Kind: </label>
+            <div class="col-lg-10">
+              <input type="text" ng-model="pet.kind" class="form-control" id="inputEmail" placeholder="Cat, Dog, etc...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Variety: </label>
+            <div class="col-lg-10">
+              <input type="text" ng-model="pet.variety" class="form-control" id="inputEmail" placeholder="labrador, siamese, etc...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Gender: </label>
+            <div class="col-lg-10">
+              <input type="text" ng-model="pet.gender" class="form-control" id="inputEmail" placeholder="Male/Female">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Age: </label>
+            <div class="col-lg-10">
+              <input type="text" ng-model="pet.age" class="form-control" id="inputEmail" placeholder="Age">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Name: </label>
+            <div class="col-lg-10">
+              <input type="text" ng-model="pet.name" class="form-control" id="inputEmail" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="textArea" class="col-lg-2 control-label">Description: </label>
+            <div class="col-lg-10">
+              <span class="help-block">Let us know about this wonderful animal in your own words!</span>
+              <textarea class="form-control" ng-model="pet.description" rows="3" id="textArea"></textarea>
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+              <button type="reset" ng-click="cancelSubmission()" class="btn btn-default">Cancel</button>
+              <button type="submit" ng-click="submitPet()" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Submit</button>
+
+              <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <h2>{{name}} was submitted!</h3>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
